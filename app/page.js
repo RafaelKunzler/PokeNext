@@ -21,7 +21,7 @@ export default function Home() {
   
     // add pokemon index
     data.results.forEach((item, index) => {
-      item.id = ("000" + (index + 1)).slice(-3)
+      item.id = index + 1
     })
 
     setPokemons(data.results)    
